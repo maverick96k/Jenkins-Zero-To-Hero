@@ -10,7 +10,7 @@ pipeline {
       steps {
         checkout scm
         sh 'echo passed'
-        //git branch: 'main', url: 'https://github.com/iam-veeramalla/Jenkins-Zero-To-Hero.git'
+        //git branch: 'main', url: 'https://github.com/maverick96k/Jenkins-Zero-To-Hero.git'
       }
     }
   stage('Test Container') { // Added this stage for testing the container interaction

@@ -17,6 +17,7 @@ pipeline {
       steps {
         // Simple test to ensure the container is working
         sh 'echo "Hello from inside container"'
+        sh 'ls /var/lib/jenkins/workspace/UltimateDemo/.git/index.lock'
       }
     }
     stage('Build and Test') {
